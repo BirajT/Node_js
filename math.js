@@ -21,3 +21,35 @@ export class Student{
     }
     
 }
+
+export class Bank{
+    name
+    address
+    balance
+
+    constructor(name,address,balance){
+        this.name=name
+        this.balance=balance
+        this.address=address
+    }
+    deposit(amount)
+    {
+        this.balance=this.balance+amount;
+    }
+    withdraw(amount)
+    {
+        this.balance=this.balance-amount;
+    }
+    getBalance()
+    {
+        console.log("Your balance is ",this.balance);
+    }
+    getinfo()
+    {
+        console.log("Name = ",this.name);
+        console.log("Address = ",this.address);
+        console.log("Balance = ",this.balance);
+    }
+
+
+}
